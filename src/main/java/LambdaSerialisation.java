@@ -17,7 +17,8 @@ class LambdaSerialisation {
 
 class LambdaDeserialisation {
     public static void main(String[] args) throws Exception {
-        File file = new File("/tmp/lambda.ser");
+        File file = new File("lambda.ser");
+        // File file = new File("/tmp/lambda.ser");
         System.out.println("reading lambda from " + file);
 
         ObjectInput oi = new ObjectInputStream(new FileInputStream(file));
